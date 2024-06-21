@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var connectionString = "server=localhost;user=codingevents;password=codingevents;database=coding-events";
-var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
+var connectionString = "server=localhost;user=codingevents;password=Knaetliseon72279!;database=coding_events";
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 37));
 
 builder.Services.AddDbContext<EventDbContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion));
 
